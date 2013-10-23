@@ -20,7 +20,7 @@
 
 #import "LocationSearchViewController.h"
 #import "AppManager.h"
-#import "MapAppAppDelegate.h"
+#import "AppDelegate.h"
 
 @implementation LocationSearchViewController
 
@@ -44,8 +44,16 @@ AppManager *appMgr;
     return self;
 }
 
+-(void)viewDidLoad
+{
+    [self.segmentedControl setSegmentedControlStyle:UISegmentedControlStyleBezeled];
+    
+}
+
+
 - (void)viewDidAppear:(BOOL)animated
 {
+
 	if ([appMgr.searchFilter isLocationNameFilteringActive]) 
 		[self enableLocationControls];
 	else 
@@ -56,17 +64,18 @@ AppManager *appMgr;
 - (void) disableLocationControls
 {
 	self.locationPicker.alpha = 0.30;
-	self.segmentedControl.alpha = 0.30;
 	self.segmentedControl.enabled = NO;
-	
+    self.segmentedControl.tintColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:0.3];
+
 }
 
 - (void) enableLocationControls
 {
     
 	self.locationPicker.alpha = 1.0;
-	self.segmentedControl.alpha = 1.0;
 	self.segmentedControl.enabled = YES;
+    self.segmentedControl.tintColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
+    
 	
 }
 

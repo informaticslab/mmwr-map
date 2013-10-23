@@ -18,12 +18,12 @@
 //  limitations under the License.
 //
 
-#import "MapAppAppDelegate.h"
+#import "AppDelegate.h"
 #import "MapViewController.h"
 #import "SettingsPopoverView.h"
 #import "Debug.h"
 
-@implementation MapAppAppDelegate
+@implementation AppDelegate
 
 @synthesize window;
 
@@ -36,7 +36,8 @@
 	
     // Override point for customization after application launch.
 	MapViewController *mapViewController = [[MapViewController alloc] initWithNibName:@"MapView" bundle:nil];
-	[window addSubview:mapViewController.view];
+	//[window addSubview:mapViewController.view];
+    [self.window setRootViewController:mapViewController];
 	[window makeKeyAndVisible];
 
 	

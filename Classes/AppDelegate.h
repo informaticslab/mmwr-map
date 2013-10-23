@@ -20,7 +20,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MapAppAppDelegate : NSObject <UIApplicationDelegate> {
+@interface AppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 }
 
