@@ -394,7 +394,7 @@
 				GCC_PREFIX_HEADER = MapApp_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MapApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = MapApp;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -413,7 +413,7 @@
 				GCC_PREFIX_HEADER = MapApp_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MapApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = MapApp;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
